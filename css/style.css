@@ -1,0 +1,438 @@
+
+/* =========================== css variable ======================== */
+
+:root{
+    --primary:#fff;
+    --commonfont:#C4C4C4;
+    --lignheight:24px;
+    --perafont:18px;
+    --light:300;
+    --medium:500;
+    --semibold:600;
+    --bold:700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ==================== navbar start here ================== */
+nav{
+    padding: 30px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    column-gap: 50px;
+}
+.menu ul li a{
+    text-transform: capitalize;
+    color: var(--primary);
+    text-align: center;
+}
+.menu ul li a i{
+    text-align: center;
+}
+.common-btn button{
+    color: #000;
+    text-transform: capitalize;
+    padding: 14px 28px ;
+    font-size: 18px;
+    font-weight: 400;
+    background: none;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid var(--commonfont);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.common-btn button:hover{
+    background-color: #082859;
+    color: var(--primary);
+}
+
+/* ================ banner part start here ==================== */
+
+#banner{
+    padding: 140px 0;
+    background-color: #082859;
+}
+.banner-btn{
+    text-align: center;
+    gap: 20px;
+}
+.banner-btn a{
+    padding: 10px 20px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    color: var(--commonfont);
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: var(--medium);
+}
+.banner-wrapper{
+    margin: 0 auto;
+}
+.banner-heading{
+    text-align: center;
+}
+.banner-heading h1{
+    padding: 25px 0;
+    text-transform: capitalize;
+    color: var(--primary);
+    font-weight: var(--bold);
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif; 
+    line-height: 64px;
+}
+.banner-heading p{
+    line-height: var(--lignheight);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: var(--perafont);
+    padding-bottom: 50px;
+    color: var(--primary);
+}
+
+/* ================ wikipedia part start here ==================== */
+
+#wikipedia{
+    padding: 50px 0;
+}
+.wiki-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wiki-wrapper a{
+    font-size: 20px;
+    color: #082859;
+}
+/* ================ trafic area start here ==================== */
+#trafic{
+    padding: 50px 0;
+}
+.trafic-wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.trafic-left{
+    width: 550px;
+}
+.trafic-left a{
+    font-size: 18px;
+}
+.trafic-left h2{
+    font-size: 24px;
+    color: #29313D;
+    padding: 25px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.trafic-left p{
+    font-size: 18px;
+    color: #29313D;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+}
+.progress{
+    margin-top: 70px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+.progress .prog{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #082859;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress :nth-child(2).prog{
+    border: 5px solid red;
+    color: red;
+}
+.progress :nth-child(3).prog{
+    border: 5px solid blueviolet;
+    color: blueviolet;
+}
+.trafic-right{
+    width: 550px;
+    overflow: hidden;
+}
+.trafic-right img{
+    cursor: pointer;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* ================ help part start here ==================== */
+
+#help{
+    padding: 50px 0;
+    background-color: #F7FCFC;
+}
+.common-heading{
+    text-align: center;
+}
+.common-heading a{
+    font-size: 24px;
+}
+.common-heading h1{
+    font-size: 48px;
+    font-weight: 600;
+    padding: 25px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.help-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 25px;
+}
+.help-box{
+    width: 290px;
+    height: 220px;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 8px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    background-color: #082859;
+}
+.help-box:hover{
+    background-color: #F8A64C;
+}
+.help-box p{
+    padding: 25px 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.analytic{
+    padding: 50px 0;
+}
+.analytic-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+.analytic-img{
+    width: 550px;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.analytic-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.analytic-content{
+    width: 550px;
+    height: 100%;
+}
+.analytic-content h2{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #29313D;
+}
+.analytic-content p{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #29313D;
+    line-height: 200%;
+    padding: 50px 0;
+}
+/* ================ work part start here ==================== */
+
+#work{
+    padding: 50px 0;
+}
+.work-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.work-heading h1{
+    padding: 25px 0;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #082859;
+}
+.blog-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.blog-main{
+    width: 400px;
+    height: 450px;
+}
+.blog-main:hover{
+    border-bottom: 4px solid #082859;
+    cursor: pointer;
+}
+.blog-img{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    overflow: hidden;
+}
+.blog-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.blog-content{
+    padding-top: 25px;
+}
+.blog-content p{
+    padding: 25px 0;
+    line-height: 24px;
+}
+
+/* ================ analytics part start here ==================== */
+
+#analytics{
+    padding: 50px 0;
+}
+.analytic-main{
+    text-align: center;
+    background-color: #082859;
+    border-radius: 15px;
+    padding: 50px 0;
+}
+.analytic-main h1{
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif; 
+    color: #fff;
+}
+.analytic-main p{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    padding: 25px 0;
+    line-height: 24px;
+}
+.analytic-btn{
+    height: 50px;
+    width: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.analytic-btn button{
+    background: none;
+    border: none;
+    padding: 17px 25px;
+    font-size: 14px;
+    color: #082859;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+}
+.analytic-btn :nth-child(2){
+    background-color: #6A55EA;
+}
+/* ================ footer part start here ==================== */
+
+#footer{
+    padding: 100px 0;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+}
+.footer-main{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-main a{
+    padding: 25px 0;
+}
+.footer-main h1{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    color: #082859;
+}
+.footer-main p{
+    line-height: 24px;
+    padding-top: 48px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #082859;
+}
+/* ================ copywrite part start here ==================== */
+
+#copywrite{
+    padding: 25px 0;
+    background-color: #082859;
+}
+.copy-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-copy h1{
+    font-size: 18px;
+    color: #fff;
+}
+.right-copy a{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 40px;
+}
+/* ================ google fonts here ==================== */
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
