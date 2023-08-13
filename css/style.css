@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 0.8;
 }
 .container{
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -127,6 +127,83 @@ nav{
 }
 .wiki-wrapper a{
     font-size: 20px;
+    color: #082859;
+}
+/* ================ SEO area start here ==================== */
+
+#seo{
+    padding: 50px 0;
+}
+.seo-wrapper{
+    display: flex;
+    align-items: center;
+}
+.seo-main{
+    width: 570px;
+}
+.seo-img{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.seo-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.seo-main p{
+    padding: 35px 0;
+    color: #000;
+    font-size: 18px;
+    line-height: 24px;
+}
+.seo-right{
+    width: 570px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.seo-item{
+    width: 500px;
+    height: 150px;
+    padding: 25px 30px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.seo-item:hover{
+    border-bottom: 4px solid #082859;
+    cursor: pointer;
+}
+.seo-item-wrapper{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.seo-icon{
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.seo-icon img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.seo-conten h2{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #082859;
+}
+.seo-conten p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 25px 0;
     color: #082859;
 }
 /* ================ trafic area start here ==================== */
@@ -336,7 +413,7 @@ nav{
     text-align: center;
     background-color: #082859;
     border-radius: 15px;
-    padding: 50px 0;
+    padding: 120px 0;
 }
 .analytic-main h1{
     font-size: 48px;
@@ -425,8 +502,8 @@ nav{
 .right-copy a{
     font-size: 18px;
     color: #fff;
-    padding-left: 40px;
 }
+
 /* ================ google fonts here ==================== */
 
 /* font-family: 'Inter', sans-serif;
