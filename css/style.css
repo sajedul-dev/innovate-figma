@@ -49,14 +49,14 @@ nav{
 }
 .menu ul li a{
     text-transform: capitalize;
-    color: var(--primary);
+    color: #F8A64C;
     text-align: center;
 }
 .menu ul li a i{
     text-align: center;
 }
 .common-btn button{
-    color: #000;
+    color: #F8A64C;
     text-transform: capitalize;
     padding: 14px 28px ;
     font-size: 18px;
@@ -69,7 +69,7 @@ nav{
     transition: all linear 0.3s;
 }
 .common-btn button:hover{
-    background-color: #082859;
+    background-color: #F8A64C;
     color: var(--primary);
 }
 
